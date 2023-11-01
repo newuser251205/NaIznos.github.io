@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="МЕДИА/ico.png">
+    <link type="text/css" rel="stylesheet" href="iznos.css">
+    <title> На износ! </title>
+</head>
+<body align="center">
+
+    <header>
+
+    <div class="stolog">
+        
+        <a name="upp" href="index.html"> <img src="МЕДИА/logo.png" class="logo" width="150px" height="70px"> </a>
+        
+        <h1 class="sto"> СТО "На износ!" </h1>
+
+    </div>
+
+        <div class="dropdown">
+            <button class="dropbtn"> <img src="МЕДИА/nastr.svg.png" width="60px" height="50px"> </button>
+            <div class="dropdown_content">
+              <a href="login.html"> Войти в аккаунт </a>
+              <a href="auth.html"> Создать аккаунт </a>
+              <a href="МЕДИА/not_aval"> Тех. поддержка </a>
+            </div>
+          </div>
+
+    </header>
+
+        <div class="navigation">
+            <ul class="menu_bar">
+                <li> <a href="#zakaz"> Статус заказа </a> </li>
+                <li> <a href="#maps"> Адреса сервисов </a> </li>
+                <li> <a href="МЕДИА/not_aval.html"> Отзывы </a> </li>
+            </ul>
+        </div>
+
+
+        </div>
+
+    <div class="main">
+
+        <h2> Добро пожаловать в наш автосервис! </h2>
+        <p> <i> Мы предлагаем широкий спектр услуг по ремонту и обслуживанию автомобилей. </p>
+        <p> Наши квалифицированные механики и современное оборудование помогут нам вернуть ваш автомобиль в идеальное состояние. </i> </p>
+    
+        <div class="panel">
+            <label for="country">Выберите страну:</label> <br>
+            <select id="country" onchange="changeCountry()">
+                <option value="Россия"> Россия </option>
+                <option value="Казахстан"> Казахстан </option>
+            </select>
+
+            <p><a href="#upp">Главное меню</a></p>
+            <p><a href="#partners"> Наши партнёры </a> </p>
+            <p><a href="#about_us"> О нас </a> </p>
+
+        </div>
+        
+        <script>
+        function changeCountry() {
+            var select = document.getElementById("country");
+            var selectedCountry = select.options[select.selectedIndex].value;
+            
+            if (selectedCountry === "Казахстан") {
+                window.location.href = "iznos_kz.html";
+            } else if (selectedCountry === "Россия") {
+                window.location.href = "index.html";
+            }
+        }
+        </script>
+
+    <div class="zakaz">
+        <a name="zakaz"> <h1> Проверить статус заказа: </h1> </a>
+            <div class="forma1">
+            <form action="МЕДИА//not_aval.html">
+                <input type="text" placeholder="Введите ваш ИИН" required>
+                <input type="text" placeholder="Введите трек-номер" required>
+                <input type="text" placeholder="Введите ваш номер/почту"> 
+        <br> <br>
+            <input type="submit" class="submit1" value="Проверить">
+            </form>
+            </div>
+
+        <div class="forma2">
+
+            <h1> Заполнить заявку онлайн: </h1>
+
+            <form action="МЕДИА/not_aval.html">
+
+                    <p><label for="name"></label>
+                <input type="text" id="name" placeholder="Введите ваше Имя" required>
+
+                    <label for="pass"></label>
+                <input type="text" id="lastname" placeholder="Введите вашу Фамилию" required>
+
+                    <label for="name"></label>
+                <input type="text" id="surname" placeholder="Введите ваше Отчество" required></p>
+
+                    <p><label for="name"></label>
+                <input type="number" id="IDN" placeholder="Введите ваш ИИН" required>
+
+                    <label for="name"></label>
+                <input type="number" id="phone" placeholder="Введите ваш Номер" required>
+
+                <label for="zav">⠀Тип заявки: </label>
+                <select>
+                    <option> Поломка </option>
+                    <option> Запчасти</option>
+                    <option> Тюнинг </option>
+                    </select>
+                    </p> 
+
+                    <input type="submit" class="submit2" value="Отправить">
+
+            </form>
+            </div>
+
+        </div>
+
+        <div class="pereh">
+            <img src="МЕДИА/BG_CAR2.gif" class="bg_car2">
+
+            <p> На износ! Заботимся о вашем воз. </p>
+
+        </div>
+
+    </div>
+
+    </div>
+   
+    <div class="maps">
+    <a name="maps">
+        <p class="fills"> Мы распологаем филлиалами на территории <font color="orangered"> 
+            Казахстана </font> и <font color="orangered"> России</font>. <p> </a>
+
+        <p class="city1"> <font color="orangered"> Москва </font>
+    <br> <font size="4">
+        Станция метро "Китай-Город" 
+    <br>
+        Улица Васильевская / дом 13
+    <br>
+        Улица Самарская / дом 26
+    <br><br><br><br><br>
+        Рабочие часы с <font color="orangered"> 9:00 </font> до <font color="orangered"> 21:00 </font> <br>
+        <font color="orangered"> Без </font> выходных
+    
+    </font> </p> 
+
+    <p class="city2"> <font color="orangered"> Санкт-Петербург </font>
+        <br> <font size="4">
+            Проспект Московский / дом 6
+        <br>
+            Проспект Невский / дом 17
+        <br>
+           Улица Передикова / дом 2
+        <br><br><br><br><br>
+           Рабочие часы <font color="orangered"> круглосуточно </font> <br>
+           <font color="orangered"> Выходные: </font> по четвергам
+        </font> </p> 
+
+    </div>
+    
+<hr class="hr1">
+
+    <div class="about_us"> <a name="about_us"></a>
+    <font size="5">
+        <h1> <font color="orangered"> О нас </font> </h1> 
+
+        <p> <font color="white"> Добро пожаловать в СТО "На износ!" - вашем надежном партнере в сфере автомобильного обслуживания и <br>
+            ремонта. Наша компания основана на стремлении обеспечить владельцам автомобилей безупречное качество <br>
+            обслуживания и максимальное удовлетворение клиентов. Мы гордимся тем, что уже многие годы предоставляем <br>
+            выдающиеся услуги, и наши специалисты являются экспертами в автомобильной индустрии. </font> </p>
+            
+        <br><br>
+
+        <h1> <font color="orangered"> Наше видение </font> </h1> 
+
+        <p> <font color="white"> Мы видим будущее автомобильного обслуживания как место, где технология и навыки объединяются для <br>
+            создания безупречных автомобилей. Мы стремимся стать инновационным центром, предоставляющим самые <br>
+            передовые технологии и услуги в сфере ремонта и обслуживания автомобилей. </font> </p>
+    
+        <br><br>
+
+        <h1> <font color="orangered"> Наши ценности </font> </h1> 
+            
+        <p> <font color="white"> Наши ценности - это фундамент нашего бизнеса. <br>
+            Мы придерживаемся высоких стандартов во всем, что мы делаем: <br><br>
+            Профессионализм: <br> 
+            Наши сотрудники - опытные и высококвалифицированные специалисты, <br>
+            готовые решать любые задачи в автомобильной сфере. <br><br>
+            
+            Инновации: <br>
+            Мы всегда идем в ногу со временем и внедряем <br>
+            передовые технологии, чтобы улучшать наши услуги. <br><br>
+            
+            Прозрачность: <br>
+            Мы ценим открытую и честную коммуникацию с нашими клиентами. <br>
+            Нет скрытых платежей и неприятных сюрпризов. <br><br>
+            
+            Удовлетворение клиентов: <br>
+            Мы работаем, чтобы превзойти ожидания клиентов и <br>
+            обеспечить им максимальное удовлетворение. </font> </p>
+            
+        <br><br>
+
+        <h1> <font color="orangered"> Наши Услуги </font> </h1>
+            
+        <p> <font color="white"> В СТО "На износ!" мы предоставляем полный спектр услуг, включая: <br><br>
+            Регулярное техническое обслуживание. <br>
+            Ремонт и замену запчастей. <br>
+            Диагностику и решение сложных технических проблем. <br>
+            Тюнинг и улучшение производительности. <br>
+            Специализированные услуги по уходу за вашим автомобилем. </font> </p>
+
+        <br><br><br><br>
+
+        <a name="partners"></a>
+
+        <h1> <font color="orangered"> Наши Партнеры </font> </h1>
+        
+        <font color="white">
+            На данный момент мы содруничаем с такими именитыми компаниями как: <br>
+            <font color="orangered">
+            <ul class="coops">
+            <li> Ford; ⠀    ⠀⠀⠀ </li>
+            <li> Toyota; ⠀⠀⠀ </li>
+            <li> BMW; ⠀⠀⠀⠀ </li>
+            <li> Hyundai; ⠀⠀ </li>
+            <li> Volkswagen; </li>
+            <li> R-N-M ⠀⠀⠀⠀ </li>
+            </p> </ul>
+            <br><br>
+            </font>
+
+
+            Мы гордимся партнерством с ведущими производителями автозапчастей и <br> 
+            предоставляем только оригинальные 
+            детали для ваших автомобилей. <br><br>
+        <font color="orangered"> Свяжитесь с нами </font> <br>
+            Если у вас есть вопросы, комментарии или вам нужна дополнительная информация о наших услугах, <br>
+            пожалуйста, свяжитесь с нами. Наша дружелюбная команда готова помочь вам в любое время. <br>
+            Мы ценим ваше доверие и готовы встретиться с вами лично, чтобы показать, как мы можем <br> 
+            улучшить ваш автомобиль и сделать вашу езду более безопасной и комфортной. Спасибо за то, <br>
+            что выбрали СТО "На износ!" как вашего партнера в автомобильном обслуживании. Мы с нетерпением ждем вас!
+    </font>
+
+    </div>
+
+    </div>
+
+    <footer>
+
+        <p> © 2023 Станция Тех. Обслуживания "На износ!". <br>
+            На износ! Заботимся о вашем воз. <br> <br>
+            Все права защищены. </p>
+
+    </footer>
+   
+</body>
+</html>
